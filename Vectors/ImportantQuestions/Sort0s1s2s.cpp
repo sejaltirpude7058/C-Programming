@@ -1,4 +1,11 @@
 //Sort 0s, 1s and 2s 
+/*
+Algorithm
+step 1 : first important think about mid 
+Step 2 : 0 to low-1 -> 0s and high to n-1 ->  2s
+Step 3 : low to mid - 1 -> 1 
+we will do this by swaping elements of mid with high and then low
+*/
 #include<iostream>
 #include<vector>
 using namespace std; 
