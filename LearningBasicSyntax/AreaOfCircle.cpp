@@ -9,4 +9,5 @@ int main(){
    const float pii = 3.1415;
    float area = pii*radius*radius;
    cout<<"The area of circle is "<<area;
+   cout<<"The area of circle is "<<area;
 }

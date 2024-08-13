@@ -26,4 +26,23 @@ int main(){
             rotate[j][i] = temp;
         }
     }
+    //Reverseing the elements
+    for(int k=0; k<n; k++){
+        int i=0; 
+        int j=n-1;
+        while(i<=j){ //swap k,i and k,j
+            int temp = rotate[k][i];
+            rotate[k][i] = rotate[k][j];
+            rotate[k][j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout<<rotate[i][j]<<" ";
+        }
+        cout<<endl;
+    }
 }
