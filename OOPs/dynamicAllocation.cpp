@@ -24,15 +24,15 @@ public:
 
 int main()
 {
-    int x = 12; //  static allocation during complile time
-    int *ptr = &x;
+    // int x = 12; //  static allocation during complile time
+    // int* ptr = &x;
 
-    // directly stored address in pointer without any variable name
-    int *ptr = new int(34); // dynamic allocation runtime (heap memory)
+    // // directly stored address in pointer without any variable name
+    // int* ptr = new int(34); // dynamic allocation runtime ( stored in heap memory)
     
     Employee c2(2,"Mihir", 453453, "Data Analytics", 32000, "mihir@.com", "JP Nagar"); // static allocation
 
-    Employee *c1 = new Employee(1, "Sejal", 780780, "Software Developer", 45000, "sejal@.com", "Shambhu Nagar"); //dynamic allocation during run time (heap memory)
+    Employee* c1 = new Employee(1, "Sejal", 780780, "Software Developer", 45000, "sejal@.com", "Shambhu Nagar"); //dynamic allocation during run time (stored in heap memory)
 
     cout<<c1->location<<endl;
 }
