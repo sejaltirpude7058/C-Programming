@@ -54,8 +54,16 @@ data_type variable_name = value;
 
 //basic program using c
 
-#include <stdio.h>
-int main(){
+#include <stdio.h> //#include is a preprocessor directive used to include the standard input output header file
+int main(){ // main is the entry point of the program
+    //printf is used to print the output to the console
+    printf("Hello World");//output -> Hello World
 
-    printf("Hello World");
+    int age; //variable declaration
+    printf("Enter your age: "); 
+    
+    // scanf is used to take the input from the user
+    scanf("%d ", &age); //& is used to get the address of the variable
+
+    printd("your age is %d ", age);
 }
