@@ -33,7 +33,7 @@ unsigned char      1 bytes
 enum               4 bytes
 short int          2 bytes
 unsigned long      4 bytes
-long double        12 to 16 bytes
+long double        8, 10, 12, or 16 bytes (Depends on compiler and system) 
 
 
 variable naming conventions :
@@ -56,14 +56,10 @@ data_type variable_name = value;
 
 #include <stdio.h> //#include is a preprocessor directive used to include the standard input output header file
 int main(){ // main is the entry point of the program
-    //printf is used to print the output to the console
-    printf("Hello World");//output -> Hello World
-
-    int age; //variable declaration
-    printf("Enter your age: "); 
     
+    int age; //variable declaration
+    printf("Enter your age: "); //printf is used to print the output to the console
     // scanf is used to take the input from the user
     scanf("%d ", &age); //& is used to get the address of the variable
-
-    printd("your age is %d ", age);
+    printf("your age is %d ", age);
 }
